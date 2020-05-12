@@ -1,4 +1,1 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="pxt-on-start"></block>
-  <block type="device_forever"></block>
-</xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="=1R4M8HfOD#ld)zH=,aH" x="0" y="0"><statement name="HANDLER"><block type="typescript_statement" id="bop#7`4u:+~56dm@^Ko[" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="namespace pins {" line1="     //% block" line2="    export function MotorRunI2C (chanel: number, speed: number): void {" line3="        let buf = pins.createBuffer(3);" line4="    if (speed &gt;= 0) {" line5="            buf[0] = 2;" line6="        } else {" line7="            buf[0] = 3;" line8="        }" line9="        buf[1] = chanel;" line10="        if (speed &gt;= 0) {" line11="            buf[2] = speed;" line12="        } else {" line13="            buf[2] = speed * -1;" line14="        }" line15="        pins.i2cWriteBuffer(0x14, buf);" line16="    }" line17="}" numlines="18"></mutation></block></statement></block></xml>
